@@ -217,7 +217,8 @@ h2{
 
     }
     body{
-        background-color: antiquewhite;
+        background: linear-gradient(70deg, rgb(253, 202, 92), rgb(249, 161, 175));
+    }
     }
     .contanier{
         background-color: antiquewhite ;

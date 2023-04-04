@@ -157,7 +157,6 @@ h2{
 .content_verse{
     width: 100%;
     height: 100%;
-    text-align: center;
     position: relative;
     margin-top: 50px;
     font-weight: 500;
@@ -215,7 +214,8 @@ h2{
 
     }
     body{
-        background-color: antiquewhite;
+        background: linear-gradient(70deg, rgb(253, 202, 92), rgb(249, 161, 175));
+    
     }
     .contanier{
         background-color: antiquewhite ;

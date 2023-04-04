@@ -220,7 +220,8 @@ h2{
         background-color: antiquewhite;
     }
     .contanier{
-        background-color: antiquewhite ;
+        background: linear-gradient(70deg, rgb(253, 202, 92), rgb(249, 161, 175));
+    
     }
   
     .menu_list ul{
