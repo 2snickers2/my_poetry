@@ -219,6 +219,7 @@ h2{
     }
     .contanier{
         background-color: antiquewhite ;
+        max-width: 700px;
     }
   
     .menu_list ul{
