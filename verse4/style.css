@@ -1,15 +1,18 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
 
 
 *{
     margin: 0px;
     padding: 0px;
 }
+body{
+    font-family: 'Montserrat', sans-serif;
+    /* background-color: antiquewhite; */
+}
 .contanier{
     max-width: 800px;
     height: 100%;
-    background-color: antiquewhite;
+    background: linear-gradient(70deg, rgb(253, 202, 92), rgb(249, 161, 175));
     position: relative;
     margin: auto;
     overflow: hidden;
@@ -40,13 +43,12 @@
     margin-left: 5px;
 }
 .text_logo{
-    font-family: 'Montserrat', sans-serif;
     margin: 10px;
     font-size: 19px;
 }
 .menu_list{
-    height: 100%;
-    margin-right: 15px;
+    height: 80%;
+    margin-right: 20px;
     text-align: center;
     position: relative;
     display: flex;   
@@ -61,7 +63,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left:3vh;
+    margin-left:2vh;
 }
 
 .icons img{
@@ -82,7 +84,6 @@
     display: flex;
     text-decoration: none;
     color: black;
-    font-family: 'Montserrat', sans-serif;
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -134,15 +135,11 @@
     transform: rotate(-45deg) translate(0, -50%);
 }
 
-.name_content{
-    width: 60%;
-    height: 40px;
-    font-family: 'Montserrat', sans-serif;
-    align-items: center;
-    margin: 0 auto;
- 
-    
+.burger.active::before{
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%);
 }
+
 a{
     text-decoration: none;
 
@@ -156,61 +153,41 @@ h2{
     top: 50%;
     transform: rotate(45deg) translate(0, 50%);
 }
-.verses{
-    padding: 18px 10px;
-}
-.poentry{
-    width: 55%;
-    height: 50px;
-    background-color: rgb(255, 181, 91);
-    margin: 0 auto;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 17px;
-    font-weight: 500;
-    font-family: 'Montserrat', sans-serif;
-    color: black;
+
+.content_verse{
+    width: 100%;
+    height: 100%;
+    text-align: center;
     position: relative;
-    transition: all 0.5s;
-}
-a .poentry{
-    margin-bottom: 15px;
-}
-.poentry:hover{
-    background-color: rgb(255, 165, 55);
-    transition: all 0.5s;
-    
-}
-.name_poentry{
-    width: 60%; 
-}
-
-
-
-.arrow{
+    margin-top: 50px;
+    font-weight: 500;
     display: flex;
+    list-style: 5px;
     justify-content: center;
     align-items: center;
 
 }
-.arrow_change .arrow img{
-    width: 15px;
-    height: 15px;
-    object-fit: cover;
+
+.verse{
+    margin: 0 auto;
+    
 }
-.arrow_change .arrow:nth-of-type(2){
-    display: none;
+
+.to_main a{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.71);
+    font-weight: 500;
+    margin-top: 34%;
+    padding-bottom: 10px;
 }
-.poentry:hover .arrow:nth-of-type(1){
-    display: none;
-}
-.poentry:hover .arrow:nth-of-type(2){
-    display: block;
-}
-.arrow:hover{
-    cursor: pointer;
+.to_main img{
+    width: 10px;
+    height: 10px;
 }
 
 @media (max-width: 700px){
@@ -218,7 +195,12 @@ a .poentry{
         display: flex;
     }
 
-
+    .to_main a{
+        margin-top: 58%;
+    }
+    .name_verse h2{
+        font-size: 23px;
+    }
     .menu_list{
         height: 50%;
         width: 100%;
@@ -231,6 +213,12 @@ a .poentry{
         /* padding: 50px 40px; */
         background-color: rgb(255, 207, 149);
 
+    }
+    body{
+        background-color: antiquewhite;
+    }
+    .contanier{
+        background-color: antiquewhite ;
     }
   
     .menu_list ul{
@@ -272,11 +260,13 @@ a .poentry{
     }
 }
 
+
+
 @media screen and (max-width: 575px){
     .top_menu {
         width: 100%;
         height: 7vh;
-        background-color: antiquewhite;
+        background-color: rgb(255, 219, 171);
      
     }
     .photo_logo img{
@@ -293,7 +283,7 @@ a .poentry{
 @media screen and (max-width: 575px){
     .contanier {
         height: 100%;
-        background-color: #fff;
+
     }
 }
 

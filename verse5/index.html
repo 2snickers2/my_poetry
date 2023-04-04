@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="contanier">
+        <div class="top_menu">
+            <div class="logo">
+                <div class="photo_logo">
+                    <img src="../photo/photo_2023-03-31_21-39-34 (2).jpg" alt="">
+                </div>
+
+                <div class="text_logo">
+                    <h4>Xenia</h4>
+                </div>
+            </div>
+            <div class="menu_list">
+                <ul>
+                    <li>
+                        <a href="https://t.me/kseniakk3">
+                            <div class="icons">
+                                <img src="../photo/telegram.png" alt="">
+                            </div> telegram
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/ks.susha_?igshid=ZDdkNTZiNTM=">
+                            <div class="icons">
+                                <img src="../photo/instagram.png" alt="">
+                            </div> instagram
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+380951852133">
+                            <div class="icons">
+                                <img src="../photo/telephone.png" alt="">
+                            </div> telephone
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://open.spotify.com/playlist/12b9i6sxC2oqadmNzWNb91?si=en6Q_u3sTSKZrgZ8q9Uc8Q&dd=1">
+                            <div class="icons border_right">
+                                <img src="../photo/spotify.png" alt="">
+                            </div> spotify
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="burger">
+                <span></span>
+            </div>
+        </div>
+        <div class="verse">
+            <div class="name_verse">
+                <h2>Странник</h2>
+            </div>
+            <div class="content_verse">
+                Я - словно странник ,
+                <br>
+                Потерявший путь
+                <br>
+                Все ищу дорогу, как изгнаник,
+                <br>
+                Но ее нет отнюдь.
+                <br>
+                <br>
+
+                Меня словно схватил блуд
+                <br>
+                И тащит в пруд
+                <br>
+                Пытаюсь я рваться на верх,
+                <br>
+                Но слишком силен грех.
+                <br>
+                <br>
+
+                Я пытаюсь, правда, пытаюсь
+                <br>
+                Отыскать, смысл пути найти.
+                <br>
+                Опять на злой ритуал совершаюсь.
+                <br>
+                Чтобы с ума не сойти
+            </div>
+
+        </div>
+        <div class="to_main">
+            <a href="../index.html">
+                <div class="photo_home">
+                    <img src="../photo/home.png" alt="">
+                </div>
+                <div class="text">
+                    <p>На главную</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <script>
+        document.querySelector('.burger').addEventListener('click', function () {
+            this.classList.toggle('active');
+            document.querySelector('.menu_list').classList.toggle('open');
+        })
+    </script>
+</body>
+
+</html>
